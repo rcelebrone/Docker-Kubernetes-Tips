@@ -21,6 +21,9 @@
 ## Detalha o POD pelo nome
 - kubectl describe pod {_pod-name_}
 
+## Listando HPA
+- kubectl get hpa
+
 ## Buscar informação da linha com texto "Node:", em todos os pods
 - kubectl describe pod | grep Node:
 
