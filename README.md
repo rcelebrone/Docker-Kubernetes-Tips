@@ -33,6 +33,9 @@
 ## Acessa bash no pod (para instalar no pod, usamos APK ADD...)
 - kubectl exec -it {_pod-name_} -- /bin/sh
 
+## Encaminhamento de porta local para um container
+- kubectl port-forward {_pod-name_} {_local-port_}:{_container-port_}
+
 ## Log do pod e com grep de 10 linhas
 - kubectl logs {_pod-name_} --follow=true
 - kubectl logs {_pod-name_} | grep -A 10 80409001331404
