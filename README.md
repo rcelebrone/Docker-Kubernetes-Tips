@@ -6,6 +6,13 @@
 ## Lista namespaces de um cluster
 - kubens
 
+## debug de resolução de DNS
+kubectl apply -f https://k8s.io/examples/admin/dns/dnsutils.yaml
+kubens default
+kubectl get pods dnsutils 
+kubectl exec -i -t dnsutils -- nslookup kubernetes.default 
+https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
+
 ## Pods com estado evicted (falha)
 - kubectl get pods --all-namespaces --field-selector 'status.phase==Failed'
 
