@@ -47,6 +47,9 @@ https://kubernetes.io/docs/tasks/administer-cluster/dns-debugging-resolution/
 ## Encaminhamento de porta local para um container
 - kubectl port-forward {_pod-name_} {_local-port_}:{_container-port_}
 
+## Retart do deployment
+kubectl rollout restart deployment {_deployment-name_}
+
 ## Log do pod e com grep de 10 linhas
 - kubectl logs {_pod-name_} --follow=true
 - kubectl logs {_pod-name_} | grep -A 10 80409001331404
