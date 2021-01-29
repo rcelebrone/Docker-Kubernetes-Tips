@@ -79,7 +79,7 @@ kubectl rollout restart deployment {_deployment-name_}
 kubectl logs {_pod-name_} --follow=true
 kubectl logs {_pod-name_} | grep -A 10 80409001331404
 kubectl logs {_pod-name_} --follow=true | grep CT000409
-kubectl logs -l app={_app-label_} -f | grep 33817526857
+kubectl logs -l app={_app-label_} -f | grep 123456879
 ```
 
 ### Listar nodes
