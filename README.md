@@ -162,6 +162,11 @@ sudo docker container rm aaa111
 sudo docker container stop aaa111
 ```
 
+### Acessar o container com id aaa111
+```shell
+docker exec -it aaa111 /bin/bash
+```
+
 ### Remove todos containers
 ```shell
 sudo docker rm $(sudo docker ps -a -q)
